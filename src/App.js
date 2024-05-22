@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const actions = {
   rock: "scissors",
@@ -22,7 +22,7 @@ function calculateWinner(action1, action2) {
   } else if (actions[action1] === action2){
     return -1;
   } else {
-    return null;
+    return 1;
   }
 }
 
@@ -86,6 +86,7 @@ function App() {
 
     const newWinner = calculateWinner(selectedAction, newComputerAction);
     setWinner(newWinner);
+
     if (newWinner === -1) {
       setPlayerScore(playerScore + 1);
     } else if (newWinner === 1) {
