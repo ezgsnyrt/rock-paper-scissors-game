@@ -3,23 +3,23 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <p>Rock, Paper, Scissors Game!</p>
-      <div>
-        <div>
-          <div>
+      <div className="inner-container">
+        <div className="score-board">
+          <div className="player">
             <div>You: 0</div>
             <div></div>
           </div>
-          <div>
+          <div className="player">
             <div>Computer: 0</div>
             <div></div>
           </div>
         </div>
         <div>
-          <button>Rock</button>
-          <button>Paper</button>
-          <button>Scissors</button>
+          <button className="move-btn">Rock</button>
+          <button className="move-btn">Paper</button>
+          <button className="move-btn">Scissors</button>
         </div>
         <h2>You win!</h2>
       </div>
