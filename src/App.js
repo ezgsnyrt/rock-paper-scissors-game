@@ -44,7 +44,7 @@ function GamePlayer({name = "Player", score = 0, action="rock"}) {
     <div className="player">
       <div className="score">{`${name}: ${score}`}</div>
       <div className="action">
-        {action && <ActionIcon action={action} size={60} />}
+        {action && <ActionIcon action={action} size={80} />}
       </div>
     </div>
   );
@@ -53,7 +53,7 @@ function GamePlayer({name = "Player", score = 0, action="rock"}) {
 function ActionButton({ action = "rock", onActionSelected }) {
   return (
     <button className="move-btn" onClick={() => onActionSelected(action)}>
-      <ActionIcon action={action} size={30} />
+      <ActionIcon action={action} size={40} />
     </button>
   );
 }
@@ -102,7 +102,7 @@ function App() {
           <GamePlayer name="Player" score={playerScore} action={playerAction}/>
           <GamePlayer name="Computer" score={computerScore} action={computerAction}/>
         </div>
-        <div>
+        <div className="button-container">
           <ActionButton action="rock" onActionSelected={onActionSelected} />
           <ActionButton action="paper" onActionSelected={onActionSelected} />
           <ActionButton action="scissors" onActionSelected={onActionSelected} />

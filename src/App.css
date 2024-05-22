@@ -15,45 +15,63 @@
 .inner-container {
   width: 60%;
   height: 60%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   background-color: #191919;
 }
 
 .inner-container h1 {
   color: #F6F7F8;
-  font-size: 36px;
-  background-color: #31572c;
-  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  background-color: #191919;
+  padding: 1.5%;
+  border-bottom: 2px solid #F6F7F8;
+  margin-bottom: 2%;
 }
 
 .score-board {
+  width: 100%;
+  height: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .player {
-  margin: 10px;
-  width: 120px;
-  height: 120px;
+  margin: 2%;
+  width: 20%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  background-color: #ecf39e;
+  background-color: #4f772d;
   color: #F6F7F8;
 }
 
 .score {
-  padding: 5px;
-  font-size:18px;
-  background-color: #5EC08B;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #31572c;
+}
+
+.button-container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .move-btn {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  border: 2px solid black;
-  margin: 6px;
+  border: 3px solid #90a955;
+  margin: 1.5%;
   cursor: pointer;
   background-color: #90a955;
   color: #F6F7F8;
@@ -69,5 +87,7 @@
 
 h2 {
   color: #F6F7F8;
-  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
 }
