@@ -18,9 +18,9 @@ function App() {
           </div>
         </div>
         <div>
-          <button className="move-btn"><FaHandRock /></button>
-          <button className="move-btn"><FaHandPaper /></button>
-          <button className="move-btn"><FaHandScissors /></button>
+          <button className="move-btn"><FaHandRock size={30} /></button>
+          <button className="move-btn"><FaHandPaper size={30} /></button>
+          <button className="move-btn"><FaHandScissors size={30} /></button>
         </div>
         <h2>You win!</h2>
       </div>
