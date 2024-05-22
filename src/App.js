@@ -4,8 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="container">
-      <p>Rock, Paper, Scissors Game!</p>
       <div className="inner-container">
+      <h1>Rock, Paper, Scissors Game!</h1>
         <div className="score-board">
           <div className="player">
             <div>You: 0</div>

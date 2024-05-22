@@ -5,7 +5,23 @@
 }
 
 .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  width: 60%;
+  height: 60%;
   text-align: center;
+  background-color: #191919;
+}
+
+.inner-container h1 {
+  color: #F6F7F8;
+  font-size: 36px;
 }
 
 .score-board {
@@ -29,4 +45,16 @@
   border-radius: 50%;
   border: 2px solid black;
   margin: 6px;
+  cursor: pointer;
+  background-color: #90a955;
+  color: #F6F7F8;
+}
+
+.move-btn:hover {
+  background-color: #4f772d;
+}
+
+h2 {
+  color: #F6F7F8;
+  font-size: 30px;
 }
