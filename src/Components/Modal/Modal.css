@@ -8,6 +8,8 @@
 .btn-modal {
     padding: 10px 20px;
     display: block;
+    position: absolute;
+    z-index: 0;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
