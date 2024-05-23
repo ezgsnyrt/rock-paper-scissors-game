@@ -105,11 +105,12 @@
         height: 15%;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: start;
+        padding: 2%;
     }
 
     .btn-modal {
-        padding: 12px 20px;
+        padding: 15px 20px;
         min-width: 160px;
         font-size: 28px;
     }
@@ -130,7 +131,11 @@
 
 @media only screen and (min-width:768px) and (max-width:1439px) {
     .modal-btn-container {
-        height: 20%;
+        height: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 2%;
     }
 
     .btn-modal {
