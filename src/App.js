@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
 import { useEffect, useState } from 'react';
+// import Modal from '../Components/Modal/Modal.js';
+// import "../Components/Modal.css";
 
 const actions = {
   rock: "scissors",
