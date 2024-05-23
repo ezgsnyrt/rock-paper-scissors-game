@@ -12,7 +12,14 @@ function Modal() {
     return (
         <>
         <button onClick={toggleModal} className="btn-modal">Instructions</button>
-
+        <div className="modal">
+            <div className="overlay"></div>
+            <div className="modal-info">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem fugit aspernatur voluptate optio! Laudantium atque nisi veniam ab laboriosam.</p>
+                <button className="close-modal" onClick={toggleModal}>CLOSE</button>
+            </div>
+        </div>
 
 
 
