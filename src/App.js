@@ -70,6 +70,7 @@ function ShowWinner({winner = 0}) {
   )
 }
 
+
 function App() {
   const [playerAction, setPlayerAction] = useState("");
   const [computerAction, setComputerAction] = useState("");
@@ -94,6 +95,11 @@ function App() {
     }
   };
 
+  const resetCounter = () => {
+    setPlayerScore(0);
+    setComputerScore(0);
+  }
+
   return (
     <div className="container">
       <div className="inner-container">
@@ -108,6 +114,9 @@ function App() {
           <ActionButton action="scissors" onActionSelected={onActionSelected} />
         </div>
         <ShowWinner winner={winner} />
+        <div>
+          <button onClick={resetCounter} className="btn-reset">Reset</button>
+        </div>
       </div>
     </div>
   );
