@@ -14,7 +14,7 @@
 
 .inner-container {
   width: 60%;
-  height: 60%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -38,6 +38,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.action {
+  padding: 10px 10px;
 }
 
 .player {
@@ -67,8 +71,8 @@
 }
 
 .move-btn {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid #90a955;
   margin: 1.5%;
