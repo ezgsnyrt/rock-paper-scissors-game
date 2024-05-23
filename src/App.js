@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
 import { useEffect, useState } from 'react';
-// import Modal from '../Components/Modal/Modal.js';
-// import "../Components/Modal.css";
+import Modal from './Components/Modal/Modal.js';
+import "./Components/Modal/Modal.css";
 
 const actions = {
   rock: "scissors",
@@ -102,6 +102,12 @@ function App() {
     setComputerScore(0);
   }
 
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  }
+
   return (
     <div className="container">
       <div className="inner-container">
@@ -120,6 +126,7 @@ function App() {
           <button onClick={resetCounter} className="btn-reset">Reset</button>
         </div>
       </div>
+      { <Modal />}
     </div>
   );
 }
