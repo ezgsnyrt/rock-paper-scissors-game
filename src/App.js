@@ -125,8 +125,10 @@ function App() {
         <div>
           <button onClick={resetCounter} className="btn-reset">Reset</button>
         </div>
+        <div className="modal-btn-container">
+        { <Modal />}
+        </div>
       </div>
-      { <Modal />}
     </div>
   );
 }
