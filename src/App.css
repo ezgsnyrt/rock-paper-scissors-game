@@ -115,6 +115,7 @@ h2 {
   .inner-container {
     width: 100%;
     height: 100%;
+    position: static;
   }
 
   .inner-container h1 {
@@ -161,6 +162,7 @@ h2 {
   .inner-container {
     width: 100%;
     height: 100%;
+    position: static;
   }
 
   .inner-container h1 {
@@ -194,8 +196,8 @@ h2 {
   }
 
   .move-btn {
-    width: 125px;
-    height: 125px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     border: 3px solid #90a955;
     margin: 4%;
@@ -208,12 +210,17 @@ h2 {
 
   .btn-reset {
     min-width: 160px;
-    padding: 20px 20px;
-    font-size: 24px;
+    padding: 15px 15px;
+    font-size: 20px;
   }
 }
 
 
-/* @media only screen and (min-width:1440px) {
+@media only screen and (min-width:1440px) {
+  .inner-container {
+    width: 80%;
+    height: 85%;
+  }
 
-} */
+
+}
